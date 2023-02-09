@@ -1,14 +1,11 @@
-class Filme:
+from Classe_Programa import Programa
+class Filme(Programa):
 
     def __init__(self, nome, ano, genero, duracao):
-        self.__nome = nome.title()
-        self.__ano = ano
-        self.__genero = genero
+        super().__init__(nome,ano,genero)
         self.__duracao = duracao
-        self.__likes = 0
 
-    def darlike(self):
-        self.__likes += 1
+
 
     def dadosfilme(self):
         #nome = str(self.__nome).title()
